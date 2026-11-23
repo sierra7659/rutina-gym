@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Rutina full body de 3 días a la semana con máquinas Technogym, orientada a hipertrofia.">
+<title>Rutina Full Body · 3 días</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="stack" viewBox="0 0 24 24">
+      <rect x="7" y="2" width="10" height="1.8" rx="0.5"/>
+      <rect x="7" y="5.2" width="10" height="1.8" rx="0.5"/>
+      <rect x="7" y="8.4" width="10" height="1.8" rx="0.5"/>
+      <rect x="7" y="11.6" width="10" height="1.8" rx="0.5"/>
+      <line x1="12" y1="13.6" x2="12" y2="20"/>
+      <circle cx="12" cy="21.4" r="1.2"/>
+    </symbol>
+    <symbol id="figure" viewBox="0 0 24 24">
+      <circle cx="6" cy="6.5" r="2.3"/>
+      <line x1="6.5" y1="8.7" x2="19" y2="14.5"/>
+      <line x1="19" y1="14.5" x2="22" y2="18.5"/>
+      <line x1="10" y1="10" x2="6" y2="17"/>
+    </symbol>
+    <symbol id="arrow-up" viewBox="0 0 24 24"><path d="M12 20V4M6.5 9.5 12 4l5.5 5.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="arrow-down" viewBox="0 0 24 24"><path d="M12 4v16M6.5 14.5 12 20l5.5-5.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="arrow-fwd" viewBox="0 0 24 24"><path d="M3 12h17M13.5 6.5 20 12l-6.5 5.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="arrow-pull" viewBox="0 0 24 24"><path d="M21 12H4M10.5 6.5 4 12l6.5 5.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="arrow-diag" viewBox="0 0 24 24"><path d="M4 20 20 4M11 4h9v9" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="arrow-diverge" viewBox="0 0 24 24"><path d="M12 12H3M7.5 7.5 3 12l4.5 4.5M12 12h9M16.5 7.5 21 12l-4.5 4.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="arrow-curl" viewBox="0 0 24 24"><path d="M4.5 12a7.5 7.5 0 1 1 2.6 5.7M4.5 12l-2-3.2M4.5 12l3.3-1" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="hourglass" viewBox="0 0 24 24"><path d="M6.5 3h11M6.5 21h11M6.5 3c1 5.5 4.5 6 5.5 7.2C13 9 16.5 8.5 17.5 3M6.5 21c1-5.5 4.5-6 5.5-7.2 1 1.2 4.5 1.7 5.5 7.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  </defs>
+</svg>
+
+<header class="site-header">
+  <div class="inner">
+    <h1>Rutina Full Body</h1>
+    <p class="subtitle">Dos sesiones (A y B) que alternas a lo largo de la semana. Pensada para hipertrofia con máquinas Technogym.</p>
+    <div class="tags">
+      <span class="tag">3 días/semana</span>
+      <span class="tag">45–60 min/sesión</span>
+      <span class="tag">Objetivo: hipertrofia</span>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section class="week" aria-labelledby="week-title">
+    <h2 id="week-title" class="section-title">Tu semana</h2>
+    <p class="section-sub">Alterna A y B cada sesión. Pulsa un día para ver su rutina.</p>
+    <div class="week-grid">
+      <div class="week-row">
+        <span class="week-label">Semana 1</span>
+        <div class="chips">
+          <button class="chip chip-a" data-goto="A">Día 1 · A</button>
+          <button class="chip chip-b" data-goto="B">Día 2 · B</button>
+          <button class="chip chip-a" data-goto="A">Día 3 · A</button>
+        </div>
+      </div>
+      <div class="week-row">
+        <span class="week-label">Semana 2</span>
+        <div class="chips">
+          <button class="chip chip-b" data-goto="B">Día 1 · B</button>
+          <button class="chip chip-a" data-goto="A">Día 2 · A</button>
+          <button class="chip chip-b" data-goto="B">Día 3 · B</button>
+        </div>
+      </div>
+    </div>
+    <p class="week-hint">Deja al menos un día de descanso entre sesiones (por ejemplo lunes, miércoles y viernes).</p>
+  </section>
+
+  <div class="tabs" role="tablist" aria-label="Elegir sesión">
+    <button class="tab" role="tab" id="tab-A" aria-controls="panel-A" aria-selected="true" data-day="A">Día A</button>
+    <button class="tab" role="tab" id="tab-B" aria-controls="panel-B" aria-selected="false" data-day="B">Día B</button>
+  </div>
+
+  <section id="panel-A" class="day day-a" role="tabpanel" aria-labelledby="tab-A">
+    <p class="day-sub">Pierna · empuje horizontal · tirón · hombro</p>
+    <div class="day-tools">
+      <span class="progress" id="progress-A">0 / 0</span>
+      <button class="btn-ghost" data-reset="A">Reiniciar sesión</button>
+    </div>
+    <div class="card-list" id="list-A"></div>
+  </section>
+
+  <section id="panel-B" class="day day-b" role="tabpanel" aria-labelledby="tab-B" hidden>
+    <p class="day-sub">Pierna (posterior) · empuje inclinado · tirón vertical · hombro lateral</p>
+    <div class="day-tools">
+      <span class="progress" id="progress-B">0 / 0</span>
+      <button class="btn-ghost" data-reset="B">Reiniciar sesión</button>
+    </div>
+    <div class="card-list" id="list-B"></div>
+  </section>
+
+  <section class="notes">
+    <h2 class="section-title">Notas clave</h2>
+    <ul>
+      <li><strong>Calentamiento:</strong> 5-10 min de cardio suave + movilidad articular antes de cada sesión.</li>
+      <li><strong>Descanso:</strong> 60-90 s en ejercicios de aislamiento, 90-120 s en los compuestos (prensa, press).</li>
+      <li><strong>Técnica primero:</strong> prioriza la forma antes de subir peso agresivamente.</li>
+      <li><strong>Progresión:</strong> al completar el rango alto de repeticiones con buena forma, sube peso ligeramente la próxima sesión.</li>
+      <li><strong>Intensidad:</strong> deja 1-2 repeticiones en reserva en la mayoría de series, sin fallar en cada una.</li>
+      <li><strong>Superseries:</strong> alterna los dos ejercicios marcados sin descansar entre ellos y descansa al terminar cada pareja.</li>
+    </ul>
+    <p class="storage-note">El peso que anotes y las casillas marcadas se guardan solo en este navegador.</p>
+  </section>
+
+</main>
+
+<script src="app.js"></script>
+</body>
+</html>
